@@ -1,0 +1,19 @@
+{
+    "scriptFile": "__init__.py",
+    "disabled": false,
+    "bindings": [
+        {
+            "authLevel": "function",
+            "type": "httpTrigger",
+            "methods": ["get"],
+            "direction": "in",
+            "name": "req",
+            "route": "bee_word_list/{name:alpha}"
+        },
+        {
+            "type": "http",
+            "direction": "out",
+            "name": "$return"
+        }
+    ]
+}
