@@ -3,12 +3,12 @@
     "disabled": false,
     "bindings": [
         {
-            "authLevel": "function",
+            "authLevel": "anonymous",
             "type": "httpTrigger",
             "methods": ["get"],
             "direction": "in",
             "name": "req",
-            "route": "bee_word_list/{name:alpha}"
+            "route": "bee_word_list/{pattern:alpha}"
         },
         {
             "type": "http",
